@@ -1,10 +1,15 @@
 import './App.css';
 import Dashboard from './layouts/Dashboard';
+import Navi from './layouts/Navi';
+import { Container } from 'semantic-ui-react';
 
 function App() {
   return (
     <div className="App">
-      <Dashboard/>
+      <Navi/>
+      <Container className="main">
+        <Dashboard />
+      </Container>
     </div>
   );
 }
